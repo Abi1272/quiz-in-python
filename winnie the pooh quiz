@@ -1,0 +1,82 @@
+#disney quiz by abi
+#Sept 19 2024
+#a quiz that determines which winnie the pooh character you are
+
+#variables to hold winnie the pooh character scores
+tigger = 0
+rabbit = 0
+piglet = 0
+eeyore = 0
+WinnieThePooh = 0
+
+#question 1----------------------------------
+answer = input("what's your favorite animal?(bears, pigs, donkeys, tigers, bunnies")
+if answer == "bears":
+    WinnieThePooh += 1
+elif answer == "pigs":
+    piglet += 1
+elif answer == "donkeys":
+    eeyore += 1
+elif answer == "bunnies":
+    rabbit += 1
+elif answer == "tigers":
+    tigger += 1
+else:
+    print("sorry that's not an option")
+    
+#question 2----------------------------------
+answer = input("what's your favorite color?(yellow, pink, orange, gray, white")
+if answer == "pink":
+    piglet+= 1
+elif answer == "yellow":
+    WinnieThePooh += 3 #you can weight some answers more heavily by making the nums bigger!
+elif answer == "gray":
+    eeyore += 1
+elif answer == "white":
+    rabbit += 1
+elif answer == "orange":
+    tigger += 1
+else:
+    print("sorry that's not an option")
+    
+#question 3----------------------------------
+answer = input("what best trait describes you?(optimistic, anxious, nosey, gloomy, confident")
+if answer == "optimistic":
+    WinnieThePooh+= 1
+elif answer == "nosey":
+    rabbit += 3 #you can weight some answers more heavily by making the nums bigger!
+elif answer == "confident":
+    tigger += 1
+elif answer == "anxious":
+    piglet += 1
+elif answer == "gloomy":
+    eeyore += 1
+else:
+    print("sorry that's not an option")
+    
+#question 4----------------------------------
+answer = input("chose a snack(honey, ice cream, carrots, chips, cookies")
+if answer == "honey":
+    WinnieThePooh+= 1
+elif answer == "ice cream":
+    eeyore += 1 
+elif answer == "chips":
+    tigger += 1
+elif answer == "carrots":
+    rabbit += 1
+elif answer == "cookies":
+    piglet += 1
+else:
+    print("sorry that's not an option")
+ 
+ 
+if WinnieThePooh >= eeyore and WinnieThePooh >= tigger and WinnieThePooh >= piglet and WinnieThePooh>=rabbit:
+    print("you are WinnieThePooh!")
+elif eeyore>=tigger and eeyore >= piglet and eeyore >=rabbit:
+    print("you are eeyore!")
+elif tigger>=piglet and tigger >=rabbit:
+    print("you are tigger!")
+elif piglet >= rabbit:
+    print("you are piglet")
+else:
+    print("you are rabbit")
