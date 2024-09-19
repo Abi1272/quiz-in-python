@@ -1,0 +1,46 @@
+#princess quiz by abi
+#Sept 19 2024
+#a quiz that determines which disney princess you are
+
+#variables to hold princess scores
+cinderella = 0
+snowhite = 0
+tiana = 0
+kyloren = 0
+
+#question 1----------------------------------
+answer = input("what's your favorite animal?(frog, porg, mouse, bird")
+if answer == "frog":
+    tiana+= 1
+elif answer == "porg":
+    kyloren += 1
+elif answer == "mouse":
+    cinderella += 1
+elif answer == "bird":
+    snowhite += 1
+else:
+    print("sorry that's not an option")
+    
+#question 2----------------------------------
+answer = input("what's your favorite color?(yellow, green, black, blue")
+if answer == "green":
+    tiana+= 1
+elif answer == "black":
+    kyloren += 3 #you can weight some answers more heavily by making the nums bigger!
+elif answer == "blue":
+    cinderella += 1
+elif answer == "yellow":
+    snowhite += 1
+else:
+    print("sorry that's not an option")
+    
+#question
+    
+if tiana >= kyloren and tiana >= cinderella and tiana >=snowhite:
+    print("you are tiana!")
+elif kyloren>=cinderella and kyloren >=snowhite:
+    print("come to the dark side, you are kyloren")
+elif cinderella >= snowhite:
+    print("you are cinderella")
+else:
+    print("you are snowhite")
